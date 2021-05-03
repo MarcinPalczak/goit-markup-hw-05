@@ -227,6 +227,11 @@ img {
     }
 }
 
+.animate__backOnTop {
+    -webkit-animation-name: backOnTop;
+    animation-name: backOnTop;
+}
+
 .navigation-contacts {
     display: flex;
     align-items: center;
