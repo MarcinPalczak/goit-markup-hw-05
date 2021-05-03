@@ -202,6 +202,29 @@ img {
     height: 4px;
     background: var(--accent-color-blue);
     border-radius: 2px;
+    animation: backOnTop 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes backOnTop {
+    0% {
+        opacity: 0.0;
+    }
+    
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .navigation-contacts {
@@ -637,29 +660,7 @@ img {
     background-color: var(--background-color-navigation);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    animation-name: backInLeft;
-    animation-duration: 500ms;
-    animation-timing-function: linear;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes backInLeft {
-    0% {
-        -webkit-transform: translateX(-2000px);
-        transform: translate(-50%, -50%);
-        opacity: 0.7;
-    }
-
-    100% {
-        -webkit-transform: translateX(0px);
-        transform: translate(-50%, -50%);
-        opacity: 1;
-    }
-}
-
-.animate__backInLeft {
-    -webkit-animation-name: backInLeft;
-    animation-name: backInLeft;
+    animation: backOnTop 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close-modal {
